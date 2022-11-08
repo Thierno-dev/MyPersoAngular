@@ -1,0 +1,16 @@
+<div>
+
+    <h3>Affichage de mes donnes depuis le fils injecter</h3>
+    <h2>{{maphoto.letitles}}</h2>
+    
+    <img [src]="maphoto.limagephotoUrl" class="ma" [alt]="maphoto.letitles">
+
+    <p>description:{{maphoto.ladescriptions}}</p>
+
+    <p>
+        <button (click)="ManageLike()">{{boutonReaction}}</button>
+        :{{this.maphoto.leNombreLikes}}
+    </p>
+
+    <p *ngIf="maphoto.localisation" >Localisation:{{maphoto.localisation}}</p>
+</div>

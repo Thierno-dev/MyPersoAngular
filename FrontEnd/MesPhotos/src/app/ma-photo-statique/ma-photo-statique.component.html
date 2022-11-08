@@ -1,1 +1,29 @@
-<p>ma-photo-statique works!</p>
+<p>My First pictures Static</p>
+
+<!--Methode String interpolation pour afficher les donnees-->
+<div>
+    <h1>Utilisation de la string interpolation avec des simple accolade passer de la parti ts au html</h1>
+
+    <p>{{title}}</p>
+    <p>Photo Creee le {{dateCreation}}</p>
+    <p>La photo decrit :{{description}}</p>
+    
+</div>
+
+<div>
+    <h2>Utilisation d'une valeur dynamique à un attribut html comme src par exemeple</h2>
+
+    <p>Voici notre image venant d'une url</p>
+
+    <img [src]="imagephotoUrl" [alt]="title" class="ma">
+    <p>Like:{{NombreLike}}</p>
+    <p>LikeUserCurrent:{{NombreLikeReaction}}</p>
+    <h3>Ajouter un evenement apres appui sur le bouton ci-desssous(click)=nomMethode</h3>
+    <button (click)="AddLike()">Click Image</button>
+    <button (click)="ManageLike()" >{{boutonReaction}}</button>
+</div>
+
+<div>
+    <h1>Gerer la gestion d'affichage plusieurs photos en injectant depuis le composant parent avec Input</h1>
+</div>
+
