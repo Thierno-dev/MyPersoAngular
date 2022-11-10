@@ -1,0 +1,22 @@
+<div>
+
+    <h3>Affichage des donnee depuis la liste des composant</h3>
+    <h2>{{LaPhoto.letitles | titlecase}}</h2>
+    
+    <img [src]="LaPhoto.limagephotoUrl " class="ma" [alt]="LaPhoto.letitles">
+
+    <p>description:{{LaPhoto.ladescriptions | uppercase}}</p>
+
+    <p>
+        <button (click)="ManageLike()">{{boutonReaction}}</button>
+        <span [ngStyle]="{color:'rgb(0,'+this.LaPhoto.leNombreLikes+',0)'
+        
+    }
+        
+        
+        ">:{{this.LaPhoto.leNombreLikes}}</span>
+    </p>
+    <p>La photo est prise le : {{LaPhoto.ladateCreations | date:'dd MMMM yyy, à HH:mm'}}</p>
+    <p *ngIf="LaPhoto.localisation" >Localisation:{{LaPhoto.localisation | uppercase}}</p>
+</div>
+

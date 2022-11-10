@@ -341,7 +341,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{{ title }} app is runnings!</span>
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
@@ -354,6 +354,9 @@
   <h1>Injection dans la variable fils [maphoto]=nomVariable dans app.ts</h1>
   <app-maphotodynamique1 [maphoto]="photo" ></app-maphotodynamique1>
   <app-maphotodynamique1 [maphoto]="photo2"></app-maphotodynamique1>
+
+  <h1>Gestion d'une liste de photo d'un utilisateur dans une appli dynamique utilisation de *ngFor</h1>
+  <app-ma-liste-photo1 *ngFor="let UnePhoto  of listPhoto" [LaPhoto]="UnePhoto"></app-ma-liste-photo1>
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
