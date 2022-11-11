@@ -16,7 +16,7 @@
         
         ">:{{this.LaPhoto.leNombreLikes}}</span>
     </p>
-    <p>La photo est prise le : {{LaPhoto.ladateCreations | date:'dd MMMM yyy, à HH:mm'}}</p>
+    <p>La photo est prise le : {{LaPhoto.ladateCreations | date:'dd MMMM yyy, à HH:mm:ss'}}</p>
     <p *ngIf="LaPhoto.localisation" >Localisation:{{LaPhoto.localisation | uppercase}}</p>
 </div>
 
