@@ -8,14 +8,20 @@ import { Maphotodynamique1Component } from './maphotodynamique1/maphotodynamique
 import { MaListePhoto1Component } from './ma-liste-photo1/ma-liste-photo1.component';
 import { registerLocaleData } from '@angular/common';
 
-import * as fr from '@angular/common/locales/fr'
+import * as fr from '@angular/common/locales/fr';
+import { ListeUtilisateurComponent } from './liste-utilisateur/liste-utilisateur.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MaPhotoStatiqueComponent,
     Maphotodynamique1Component,
-    MaListePhoto1Component
+    MaListePhoto1Component,
+    ListeUtilisateurComponent,
+    UtilisateurComponent,
+    
   ],
   imports: [
     BrowserModule
