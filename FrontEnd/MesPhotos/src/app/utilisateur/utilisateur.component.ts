@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { User } from '../models/UserPhoto.model';
 import { UserService } from '../services/Users.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-utilisateur',
@@ -9,17 +10,18 @@ import { UserService } from '../services/Users.service';
 })
 export class UtilisateurComponent implements OnInit {
 
-  @Input()  MonUser!:User;
+ // @Input()  MonUser!:User;
 
   MonUsr!:User;
 
 
 
-  constructor(private userservice:UserService) { }
+  constructor(private userservice:UserService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
 
-    this.MonUsr=this.userservice.getUser(7);
+    const userId=+this.route.snapshot.params['id'];//cette permet le parametre d'une url
+    this.MonUsr=this.userservice.getUser(userId);
   }
 
 }

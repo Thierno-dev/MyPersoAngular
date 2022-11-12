@@ -11,6 +11,8 @@ import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
 import { ListeUtilisateurComponent } from './liste-utilisateur/liste-utilisateur.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouteVideComponent } from './route-vide/route-vide.component';
 
 
 @NgModule({
@@ -21,10 +23,12 @@ import { UtilisateurComponent } from './utilisateur/utilisateur.component';
     MaListePhoto1Component,
     ListeUtilisateurComponent,
     UtilisateurComponent,
+    RouteVideComponent,
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [{provide:LOCALE_ID,useValue:'fr-FR'}],
   bootstrap: [AppComponent]
