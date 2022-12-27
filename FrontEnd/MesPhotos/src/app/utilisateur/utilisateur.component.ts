@@ -12,7 +12,8 @@ export class UtilisateurComponent implements OnInit {
 
  // @Input()  MonUser!:User;
 
-  MonUsr!:User;
+ 
+ MonUsr!:User;
 
 
 
